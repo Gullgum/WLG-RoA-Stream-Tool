@@ -1,13 +1,13 @@
 
 <p align="center">
 
-  <img src="https://github.com/Readek/RoA-Stream-Tool/blob/master/preview.png" alt="Preview">
+  <img src="https://github.com/Gullgum/WLG-RoA-Stream-Tool/blob/master/preview.png" alt="Preview">
   
 </p>
 
 <h1 align="center">RoA Stream Tool</h1>
 
-So you want to do a Rivals of Aether stream, huh? Well, today is your lucky day, because I have done tons of work so you don’t have to! With this tool, you will be able to set up a RoA tournament stream in no time.
+So you want to do a Rivals of Aether stream, huh? Well, today is your lucky day, because Readek has done tons of work so you don’t have to! With this tool, you will be able to set up a RoA tournament stream in no time, using my customised version of the overlay design. 
 
 *Now with a [Discord Server](https://discord.gg/EX22CTBNrM)!*
 
