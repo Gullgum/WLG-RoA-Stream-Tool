@@ -1,0 +1,22 @@
+{
+  "name": "Gullgum",
+  "tag": "WG",
+  "pronouns": "He/Him",
+  "twitter": "Gullgum",
+  "twitch": "",
+  "yt": "",
+  "characters": [
+    {
+      "character": "Clairen",
+      "skin": "Default",
+      "hex": "F9F9-F955-3A75-741D-60A7-A7A7-F6EE-2655-4BD5-FB3D-FFA2",
+      "customImg": true
+    },
+    {
+      "character": "Wrastor",
+      "skin": "Default",
+      "hex": "E7E7-E789-8889-F856-56F9-F9F9-F1BC-0026",
+      "customImg": true
+    }
+  ]
+}

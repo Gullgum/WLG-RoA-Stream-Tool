@@ -1,0 +1,170 @@
+[
+  {
+    "name": "Gullgum",
+    "tag": "WG",
+    "pronouns": "He/Him",
+    "twitter": "Gullgum",
+    "twitch": "",
+    "yt": "",
+    "characters": [
+      {
+        "character": "Clairen",
+        "skin": "Default",
+        "hex": "F9F9-F955-3A75-741D-60A7-A7A7-F6EE-2655-4BD5-FB3D-FFA2",
+        "customImg": true
+      },
+      {
+        "character": "Wrastor",
+        "skin": "Default",
+        "hex": "E7E7-E789-8889-F856-56F9-F9F9-F1BC-0026",
+        "customImg": true
+      }
+    ]
+  },
+  {
+    "name": "Readek",
+    "pronouns": "",
+    "tag": "",
+    "twitter": "readeku",
+    "twitch": "Readek",
+    "yt": "Readek",
+    "characters": [
+      {
+        "character": "Maypul",
+        "skin": "Default",
+        "hex": "445C-46F5-F5F5-6E23-2342-1515-345B-3065",
+        "customImg": true
+      },
+      {
+        "character": "Ori and Sein",
+        "skin": "Default",
+        "hex": "3B3B-3BC4-FFC4-0000-006F-91FF-62FF-8387",
+        "customImg": true
+      }
+    ]
+  },
+  {
+    "name": "Shnurgle",
+    "tag": "",
+    "pronouns": "He/Him",
+    "twitter": "",
+    "twitch": "",
+    "yt": "",
+    "characters": [
+      {
+        "character": "Maypul",
+        "skin": "Blue"
+      },
+      {
+        "character": "Random",
+        "skin": "Default"
+      }
+    ]
+  },
+  {
+    "name": "Test",
+    "pronouns": "",
+    "tag": "One",
+    "twitter": "",
+    "twitch": "",
+    "yt": "",
+    "characters": [
+      {
+        "character": "Absa",
+        "skin": "Default"
+      },
+      {
+        "character": "Clairen",
+        "skin": "Default"
+      },
+      {
+        "character": "Elliana",
+        "skin": "Default"
+      },
+      {
+        "character": "Etalus",
+        "skin": "Default"
+      },
+      {
+        "character": "Forsburn",
+        "skin": "Default"
+      },
+      {
+        "character": "Hodan",
+        "skin": "Default"
+      },
+      {
+        "character": "Kragg",
+        "skin": "Default"
+      },
+      {
+        "character": "Maypul",
+        "skin": "Default"
+      },
+      {
+        "character": "Mollo",
+        "skin": "Default"
+      },
+      {
+        "character": "Olympia",
+        "skin": "Default"
+      },
+      {
+        "character": "Orcane",
+        "skin": "Default"
+      },
+      {
+        "character": "Ori and Sein",
+        "skin": "Default"
+      },
+      {
+        "character": "Pomme",
+        "skin": "Default"
+      },
+      {
+        "character": "Ranno",
+        "skin": "Default"
+      },
+      {
+        "character": "Shovel Knight",
+        "skin": "Default"
+      },
+      {
+        "character": "Sylvanos",
+        "skin": "Default"
+      },
+      {
+        "character": "Wrastor",
+        "skin": "Default"
+      },
+      {
+        "character": "Zetterburn",
+        "skin": "Default"
+      },
+      {
+        "character": "Error",
+        "skin": "Default"
+      }
+    ]
+  },
+  {
+    "name": "Yberrie",
+    "tag": "Gorb",
+    "pronouns": "She/They",
+    "twitter": "",
+    "twitch": "",
+    "yt": "",
+    "characters": [
+      {
+        "character": "Ori and Sein",
+        "skin": "Default",
+        "hex": "FFFF-FF46-F4FF-0BA0-FFEE-26D7-E86D-FFA5",
+        "customImg": true
+      },
+      {
+        "character": "Maypul",
+        "skin": "Blue"
+      }
+    ]
+  }
+]

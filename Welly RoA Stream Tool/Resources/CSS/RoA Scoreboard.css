@@ -1,0 +1,458 @@
+@font-face {
+    font-family: "Deansgate";
+    src: url('../Fonts/DeansgateCondensed-Bold.ttf');
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url('../Fonts/Roboto-Bold.ttf');
+}
+
+@font-face {
+    font-family: "LemonMilk";
+    src: url('../Fonts/LEMONMILK-Medium.otf');
+}
+
+@font-face {
+    font-family: "BebasNeue";
+    src: url('../Fonts/BebasNeue-Regular.ttf');
+}
+
+:root {
+    --scoreboardX: 0px;
+    --scoreboardY: 0px;
+  }
+
+body {
+    width: 1920px;
+    height: 1080px;
+    overflow: hidden;
+    background: transparent;
+    padding: 0px;
+    margin: 0px;
+    text-transform: uppercase;
+    color: white;
+    font-family: "BebasNeue";
+}
+
+.absol {
+    position: absolute;
+}
+
+
+.scoreboard {
+    top: var(--scoreboardY);
+}
+#scoreboardL {
+    left: var(--scoreboardX);
+}
+#scoreboardR {
+    right: var(--scoreboardX);
+    transform: scaleX(-1);
+}
+
+
+.mask {
+    position: absolute;
+    -webkit-mask-image: url("../Overlay/Scoreboard/Icon Mask.png");
+    width: 239px;
+    height: 83px;
+}
+
+.charTop {
+    left: 95px;
+}
+
+.charBot {
+    top: 25px;
+    left: -285px;
+}
+
+.pCharacter {
+    width: 70px;
+    height: 70px;
+    object-fit: scale-down;
+    position: absolute;
+    left: 105px;
+    top: -15px;
+}
+
+
+.wrappers {
+    position: absolute;
+    text-align: center;
+    opacity: 0;
+    white-space: nowrap;
+
+}
+.wrappersSingles {
+    width: 295px;
+    height: 38px;   
+    top: 22px;
+    line-height: 42px;
+}
+
+.wrappersDubs {
+    width: 123px;
+    height: 30px;
+    line-height: 30px;
+    top: 32px;
+}
+
+.flipBack {
+    transform: scaleX(-1);
+}
+#p1Wrapper {
+    left: 245px;
+}
+
+#p2Wrapper {
+    right: 245px;
+}
+
+#p3Wrapper {
+    left: 106px;
+}
+#p4Wrapper {
+    right: 106px;
+}
+
+#p1Name {
+    margin-left: 10px;
+}
+
+#p2Name {
+    margin-left: 10px;
+}
+
+#p3Name {
+    margin-left: 10px;
+}
+
+#p4Name {
+    margin-left: 10px;
+}
+
+.tags {
+    color: lightgray;
+}
+
+.colors {
+    top: 20px;
+}
+
+.border {
+    left: 607px;
+    top: 20px;
+}
+
+.teamName {
+    position: absolute;
+    width: 275px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    top: 67px;
+    opacity: 0;
+    white-space: nowrap;
+}
+#teamNameL {
+    left: 115px;
+}
+#teamNameR {
+    right: 115px;
+}
+
+.scoreImgs {
+    left: 607px;
+    top: 20px;
+}
+
+.scoreNum {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 34px;
+    height: 44px;
+    top: 27px;
+    left: -12px;
+    color: black;
+    font-family: "LemonMilk";
+}
+
+
+.topBarMask {
+    overflow: hidden;
+    /*display: flex; */
+    left: 707px;
+    top: 28px;
+    width: 135px;
+    height: 31px;
+    transform: translateX(-1px);
+}
+
+.topBarTexts {
+    /* position: absolute; */
+    width: 136px;
+    height: 31px;
+    text-align: center;
+    font-size: 21pt;
+    /* background-image: url('../Overlay/Scoreboard/W\ BG.png'); */
+    /* border-image: url('../Overlay/Scoreboard/WL\ BG.png') 0 7 fill / 0 7px;*/
+   
+    /*border-right: 10px solid;
+    border-left: 10px solid;
+    gap: 8px; */
+}
+
+.pronMask {
+    width: 131px;
+    height: 30px;
+    overflow: hidden;
+    top: 92px;
+}
+
+
+.topBarPron {
+    position: absolute;
+    left: 0px;
+    width: 131px;
+    height: 30px;
+    font-size: 18pt;
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.lowerBarText {
+    color: white;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.wlImage {
+    display: block;
+    width: 136px;
+    height: 31px;
+    background-repeat: no-repeat;
+    
+}
+
+.wlText {
+    background-repeat: no-repeat;
+}
+
+#wlTextR {
+    transform: scaleX(-1);
+}
+
+
+
+#overlayRound {
+    opacity: 0;
+    width: 1920px;
+    display: flex;
+    justify-content: center;
+    top: 900px;
+}
+
+#round {
+    position: absolute;
+    width: 215px;
+    height: 50px;
+    top: 8px;
+    line-height: 32px;
+    text-align: center;
+    vertical-align: middle;
+    font-family: "Roboto";
+    white-space: nowrap;
+    font-size: 36pt;
+}
+
+
+#introVid {
+    position: absolute;
+}
+
+
+.pIntro {
+    position: absolute;
+    width: 500px;
+    height: 94px;
+    line-height: 74px;
+    bottom: 485px;
+    opacity: 0;
+    font-family: "LemonMilk";
+    white-space: nowrap;
+}
+
+#p1Intro {
+    text-align: right;
+    left: 355px;
+    text-shadow: 0px 0px 20px;
+}
+
+#p2Intro {
+    text-align: left;
+    right: 355px;
+    text-shadow: 0px 0px 20px;
+}
+
+
+.textIntro {
+    position: absolute;
+    text-align: center;
+    opacity: 0;
+    white-space: nowrap;
+}
+
+#midTextIntro {
+    width: 1100px;
+    height: 74px;
+    left: 410px;
+    bottom: 505px;
+    font-family: "LemonMilk";
+    line-height: 74px;
+    font-size: 110px;
+}
+
+#rtIntro {
+    line-height: 40px;
+    font-size: 48px;
+}
+
+#roundIntro {
+    left: 510px;
+    width: 900px;
+    height: 40px;
+    top: 406px;
+}
+
+#tNameIntro {
+    left: 510px;
+    width: 900px;
+    height: 40px;
+    bottom: 400px;
+}
+
+#introBG {
+    position: absolute;
+    width: 1920px;
+    height: 1080px;
+    background-color: rgba(0, 0, 0, 0.50);
+}
+
+.blackBar {
+    position: absolute;
+    width: 1920px;
+    background-color: black;
+}
+
+#introTopBar {
+    height: 100px;
+}
+
+#introBotBar {
+    height: 100px;
+    bottom: 0px;
+}
+
+#superCoolInterrogation {
+    position: absolute;
+    height: 74px;
+    right: 550px;
+    font-family: "LemonMilk";
+    line-height: 74px;
+    bottom: 505px;
+    font-size: 110px;
+    opacity: 0;
+}
+
+#overlayIntro {
+    opacity: 0;
+}
+
+.dubEL {
+    display: none;
+}
+
+
+.tLogos {
+    max-width: 36px;
+    max-height: 36px;
+    top: 33px;
+    object-fit: scale-down;
+}
+#tagLogoP1 {
+    left: 248px;
+}
+#tagLogoP2 {
+    right: 248px;
+}
+
+
+#connErrorDiv {
+    display: none;
+    width: 100%;
+    height: 80px;
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(to top, black, rgba(0, 0, 0, 0));
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "BebasNeue";
+    font-size: 28px;
+    color: lightcoral;
+    text-shadow: 0px 0px 5px black;
+}
+
+
+/* Animations! */
+
+@keyframes fadeOut {
+    from {opacity: 1}
+    to {opacity: 0}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+@keyframes moveOutLeft {
+    from {transform: translateX(0)}
+    to {transform: translateX(40px)}
+}
+@keyframes moveOutRight {
+    from {transform: translateX(0)}
+    to {transform: translateX(-40px)}
+}
+
+@keyframes moveInLeft {
+    from {transform: translateX(-40px)}
+    to {transform: translateX(0)}
+}
+@keyframes moveInRight {
+    from {transform: translateX(40px)}
+    to {transform: translateX(0)}
+}
+
+@keyframes charaMoveOut {
+    from {transform: translateX(0)}
+    to {transform: translateX(-20px)}
+}
+
+@keyframes charaMoveIn {
+    from {transform: translateX(-20px)}
+    to {transform: translateX(0)}
+}
+
+@keyframes wlMoveOut {
+    from {transform: translateY(0)}
+    to {transform: translateY(-32px)}
+}
+
+@keyframes wlMoveIn {
+    from {transform: translateY(-32px)}
+    to {transform: translateY(0px)}
+}

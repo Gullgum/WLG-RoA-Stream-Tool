@@ -1,0 +1,20 @@
+{
+  "name": "Yberrie",
+  "tag": "Gorb",
+  "pronouns": "She/They",
+  "twitter": "",
+  "twitch": "",
+  "yt": "",
+  "characters": [
+    {
+      "character": "Ori and Sein",
+      "skin": "Default",
+      "hex": "FFFF-FF46-F4FF-0BA0-FFEE-26D7-E86D-FFA5",
+      "customImg": true
+    },
+    {
+      "character": "Maypul",
+      "skin": "Blue"
+    }
+  ]
+}
