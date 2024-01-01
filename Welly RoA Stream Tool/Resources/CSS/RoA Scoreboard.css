@@ -139,7 +139,7 @@ body {
 }
 
 .tags {
-    color: lightgray;
+    color: rgb(211, 211, 211);
 }
 
 .colors {
@@ -197,17 +197,10 @@ body {
 }
 
 .topBarTexts {
-    /* position: absolute; */
     width: 136px;
     height: 31px;
     text-align: center;
     font-size: 21pt;
-    /* background-image: url('../Overlay/Scoreboard/W\ BG.png'); */
-    /* border-image: url('../Overlay/Scoreboard/WL\ BG.png') 0 7 fill / 0 7px;*/
-   
-    /*border-right: 10px solid;
-    border-left: 10px solid;
-    gap: 8px; */
 }
 
 .pronMask {
@@ -284,12 +277,12 @@ body {
     position: absolute;
     width: 400px;
     height: 20px;
-    top: 2px;
+    top: 1px;
     text-align: center;
     vertical-align: middle;
     font-family: "Bahnschrift";
     white-space: nowrap;
-    opacity: 0.8;
+    color: #d3d3d3;
 }
 
 #introVid {
