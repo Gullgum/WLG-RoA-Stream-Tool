@@ -18,6 +18,11 @@
     src: url('../Fonts/BebasNeue-Regular.ttf');
 }
 
+@font-face {
+    font-family: "Bahnschrift";
+    src: url('../Fonts/BAHNSCHRIFT\ 7.TTF');
+}
+
 :root {
     --scoreboardX: 0px;
     --scoreboardY: 0px;
@@ -268,6 +273,24 @@ body {
     font-size: 36pt;
 }
 
+#tournamentName {
+    position: absolute;
+    width: 1920px;
+    display: flex;
+    justify-content: center;
+}
+
+#tournament {
+    position: absolute;
+    width: 400px;
+    height: 20px;
+    top: 2px;
+    text-align: center;
+    vertical-align: middle;
+    font-family: "Bahnschrift";
+    white-space: nowrap;
+    opacity: 0.8;
+}
 
 #introVid {
     position: absolute;

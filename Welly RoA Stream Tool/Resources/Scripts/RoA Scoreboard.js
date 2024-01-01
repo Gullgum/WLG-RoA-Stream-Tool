@@ -14,6 +14,7 @@ const tagSizeDubs = "15px";
 const teamSize = "22px";
 let numSize = "36px"
 const roundSize = "19px";
+const tournamentSize = "16px";
 
 //to avoid the code constantly running the same method over and over
 const pCharPrev = [], scorePrev = [], colorPrev = [], wlPrev = [], topBarMoved = [];
@@ -43,6 +44,7 @@ const scoreAnim = document.getElementsByClassName("scoreVid");
 const tLogoImg = document.getElementsByClassName("tLogos");
 const textRound = document.getElementById('round');
 const borderImg = document.getElementsByClassName('border');
+const tournamentEL = document.getElementById('tournament');
 
 // we want the correct order, we cant use getClassName here
 const pWrapper = [], pTag = [], pName = [], pProns = [], pPronsBg = [], charImg = [];
@@ -104,6 +106,8 @@ async function updateData(scInfo) {
 	const gamemode = scInfo.gamemode;
 
 	const round = scInfo.round;
+	const tournamentName = scInfo.tournamentName;
+	
 
 
 	// first of all, things that will always happen on each cycle
@@ -306,6 +310,11 @@ async function updateData(scInfo) {
 			fadeIn(textRound.parentElement, introDelay);
 		}
 
+		updateText(tournamentEL, tournamentName, tournamentSize);
+		if (tournamentName) { // but only if theres any text to display
+			fadeIn(tournamentEL.parentElement, introDelay);
+		}
+
 		startup = false; //next time we run this function, it will skip all we just did
 	}
 
@@ -460,6 +469,13 @@ async function updateData(scInfo) {
 			} else if (!round) {
 				fadeOut(textRound.parentElement);
 			}
+		}
+		if (tournamentEL.textContent != tournamentName) {
+			fadeOut(tournamentEL).then(() => {
+				updateText(tournamentEL, tournamentName, tournamentSize);
+				fadeIn(tournamentEL);
+			});
+
 		}
 
 	}
