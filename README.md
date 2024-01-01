@@ -9,6 +9,8 @@
 
 So you want to do a Rivals of Aether stream, huh? Well, today is your lucky day, because Readek has done tons of work so you don’t have to! With this tool, you will be able to set up a RoA tournament stream in no time, using my customised version of the overlay design. 
 
+!! DOES NOT SUPPORT 2v2 MODE OR 'BEST OF X' SCORING
+
 *Now with a [Discord Server](https://discord.gg/EX22CTBNrM)!*
 
 *Also available for [Melee](https://github.com/Readek/Melee-Stream-Tool) and [Rushdown Revolt](https://github.com/Readek/Rushdown-Revolt-Stream-Tool)!*
