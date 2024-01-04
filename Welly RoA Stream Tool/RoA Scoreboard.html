@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>RoA Game Overlay</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="Resources/Scripts/RoA Scoreboard.js" defer></script>
     <link rel="stylesheet" href="Resources/CSS/RoA Scoreboard.css">
 </head>
@@ -53,8 +54,13 @@
             </div>  
 
             <img id="tagLogoP1" class="absol tLogos" alt=""/>
-    
-            <img id="p1Score" class="absol scoreImgs" alt=""/>
+            
+            <div id="p1ScoreMask" class="absol maskOverlayBO5">
+                <img id="p1ScoreBack" class="absol scoreImgBg" alt=""/>
+                <div>
+                    <img id="p1Score" class="absol scoreImgs" alt=""/>
+                </div>
+            </div>
             <img id="borderP1" class="absol border" alt=""/>
             <span class="scoreNum absol"></span>
     
@@ -121,8 +127,13 @@
             <div class="flipBack absol">
                 <img id="tagLogoP2" class="absol tLogos" alt=""/>
             </div>
-    
-            <img id="p2Score" class="absol scoreImgs" alt=""/>
+
+            <div id="p2ScoreMask" class="absol maskOverlayBO5">
+                <img id="p2ScoreBack" class="absol scoreImgBg" alt=""/>
+                <div>
+                    <img id="p2Score" class="absol scoreImgs" alt=""/>
+                </div>
+            </div>
             <img id="borderP2" class="absol border" alt=""/>
             <span class="scoreNum absol flipBack"></span>
     

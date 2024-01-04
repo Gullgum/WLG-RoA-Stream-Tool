@@ -60,7 +60,7 @@ body {
 .mask {
     position: absolute;
     -webkit-mask-image: url("../Overlay/Scoreboard/Icon Mask.png");
-    width: 239px;
+    width: 248px;
     height: 83px;
 }
 
@@ -80,6 +80,17 @@ body {
     position: absolute;
     left: 105px;
     top: -15px;
+    /* Image Outline 
+    -webkit-filter: drop-shadow(1px 1px 0 white)
+    drop-shadow(-1px 1px 0 white)
+    drop-shadow(1px -1px 0 white)
+    drop-shadow(-1px -1px 0 white);
+
+    filter: drop-shadow(1px 1px 0 white)
+    drop-shadow(-1px 1px 0 white)
+    drop-shadow(1px -1px 0 white)
+    drop-shadow(-1px -1px 0 white);
+     */
 }
 
 
@@ -169,6 +180,37 @@ body {
 }
 
 .scoreImgs {
+    /* left: 607px;
+    top: 20px; */
+    display: block;
+    width: 98px;
+    height: 55px;
+}
+
+.scoreImgBg {
+    /* left: 607px;
+    top: 20px; */
+    display: block;
+    width: 98px;
+    height: 55px;
+}
+
+.maskOverlayBO3 {
+    display: block;
+    -webkit-mask-image: url('../Overlay/Scoreboard/Score/1/Bo3 0.png');
+    /* mask-image: url('../Overlay/Scoreboard/Score/1/Bo3 0.png'); */
+    width: 98px;
+    height: 55px;
+    left: 607px;
+    top: 20px;
+}
+
+.maskOverlayBO5 {
+    display: block;
+    -webkit-mask-image: url('../Overlay/Scoreboard/Score/1/Bo5 0.png');
+    /* mask-image: url('../Overlay/Scoreboard/Score/1/Bo5 0.png'); */
+    width: 98px;
+    height: 55px;
     left: 607px;
     top: 20px;
 }
@@ -261,7 +303,7 @@ body {
     line-height: 32px;
     text-align: center;
     vertical-align: middle;
-    font-family: "Bahnschrift";
+    font-family: "Roboto";
     white-space: nowrap;
     font-size: 36pt;
 }
@@ -471,4 +513,9 @@ body {
 @keyframes wlMoveIn {
     from {transform: translateY(-32px)}
     to {transform: translateY(0px)}
+}
+
+@keyframes scoreSlide {
+    from {transform: translateX(0px)}
+    to {transform: translateX(-98px)}
 }

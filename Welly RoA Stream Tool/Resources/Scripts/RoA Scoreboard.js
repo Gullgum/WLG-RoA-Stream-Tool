@@ -39,12 +39,14 @@ const pronBars = document.getElementsByClassName("topBarProns");
 const wlText = document.getElementsByClassName("wlText");
 const wlImage = document.getElementsByClassName("wlImage");
 const scoreImg = document.getElementsByClassName("scoreImgs");
+const scoreImgBg = document.getElementsByClassName("scoreImgBg");
 const scoreNums = document.getElementsByClassName("scoreNum");
 const scoreAnim = document.getElementsByClassName("scoreVid");
 const tLogoImg = document.getElementsByClassName("tLogos");
 const textRound = document.getElementById('round');
 const borderImg = document.getElementsByClassName('border');
 const tournamentEL = document.getElementById('tournament');
+const scoreMaskEL = $('.scoreMask');
 
 // we want the correct order, we cant use getClassName here
 const pWrapper = [], pTag = [], pName = [], pProns = [], pPronsBg = [], charImg = [];
@@ -590,7 +592,22 @@ function changeGM(gm) {
 async function updateScore(pScore, bestOf, pColor, pNum, gamemode, playAnim) {
 
 	// change the score image with the new values
+	let side = null;
+
+	if (pNum == 0) {
+		side = "Left";
+	} else {
+		side = "Right";
+	}
+
+	// Place new image underneath the old one, play slide animation, then move the new image to the top
+	scoreImgBg[pNum].src = `Resources/Overlay/Scoreboard/Score/${gamemode}/Bo${bestOf} ${pScore}.png`; 
+	scoreImg[pNum].parentElement.style.animation = `scoreSlide 0.8s 0.1s both`;
+	await new Promise(resolve => setTimeout(resolve, 1000));
 	scoreImg[pNum].src = `Resources/Overlay/Scoreboard/Score/${gamemode}/Bo${bestOf} ${pScore}.png`;
+	scoreImg[pNum].parentElement.style = 'translateX(0px)';
+	scoreImgBg[pNum].src = "";
+
 	// update that score number in case we are using those
 	updateText(scoreNums[pNum], pScore, numSize);
 
@@ -598,6 +615,7 @@ async function updateScore(pScore, bestOf, pColor, pNum, gamemode, playAnim) {
 
 function updateColor(colorEL, pColor, gamemode, scoreNum, bestOf) {
 	colorEL.src = `Resources/Overlay/Scoreboard/Colors/${gamemode}/bo${bestOf}/${pColor.name}.png`;
+
 
 	// change the text shadows for the numerical scores
 	scoreNum.style.webkitTextStroke = "1px " + pColor.hex;
@@ -607,6 +625,24 @@ function updateColor(colorEL, pColor, gamemode, scoreNum, bestOf) {
 function updateBorder(bestOf, gamemode) {
 	for (let i = 0; i < borderImg.length; i++) {
 		borderImg[i].src = `Resources/Overlay/Scoreboard/Borders/Border ${gamemode} Bo${bestOf}.png`;
+		//var scoreMaskImg =`Resources/Overlay/Scoreboard/Borders/Border ${gamemode} Bo${bestOf} 0.png`;
+		
+		switch (bestOf) {
+			case "3":
+				scoreMaskEL.addClass("maskOverlayBO3");
+				scoreMaskEL.removeClass("maskOverlayBO5");
+				break;
+				
+			case "5": 
+				scoreMaskEL.removeClass("maskOverlayBO3");
+				scoreMaskEL.addClass("maskOverlayBO5");
+				break;
+
+			default:
+				scoreMaskEL.removeClass("maskOverlayBO3");
+				scoreMaskEL.removeClass("maskOverlayBO5");
+		}
+		
 		if (bestOf == "X") {
 			scoreNums[i].style.display = "flex";
 
