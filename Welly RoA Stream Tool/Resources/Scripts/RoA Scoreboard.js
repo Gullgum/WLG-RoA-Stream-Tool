@@ -628,12 +628,12 @@ function updateBorder(bestOf, gamemode) {
 		//var scoreMaskImg =`Resources/Overlay/Scoreboard/Borders/Border ${gamemode} Bo${bestOf} 0.png`;
 		
 		switch (bestOf) {
-			case "3":
+			case 3:
 				scoreMaskEL.addClass("maskOverlayBO3");
 				scoreMaskEL.removeClass("maskOverlayBO5");
 				break;
 				
-			case "5": 
+			case 5: 
 				scoreMaskEL.removeClass("maskOverlayBO3");
 				scoreMaskEL.addClass("maskOverlayBO5");
 				break;
