@@ -292,20 +292,21 @@ body {
     width: 1920px;
     display: flex;
     justify-content: center;
-    top: 900px;
+    top: 910px;
 }
 
 #round {
     position: absolute;
-    width: 215px;
-    height: 50px;
-    top: 8px;
+    width: 300px;
+    height: 70px;
+    /* top: 8px; */
     line-height: 32px;
     text-align: center;
     vertical-align: middle;
     font-family: "Roboto";
     white-space: nowrap;
     font-size: 36pt;
+    text-shadow: black 3px 3px 1px;
 }
 
 #tournamentName {
@@ -317,14 +318,36 @@ body {
 
 #tournament {
     position: absolute;
-    width: 400px;
-    height: 20px;
-    top: 1px;
+    width: auto;
+    padding: 0px 2% 6px 2%;
+    font-size: 60pt;
+    top: 855px;
     text-align: center;
     vertical-align: middle;
-    font-family: "Bahnschrift";
+    font-family: "Roboto";
     white-space: nowrap;
-    color: #d3d3d3;
+    color: #ffffff;
+    /* text-decoration: underline 2px; */
+    border-bottom: 5px solid white;
+    text-shadow: black 3px 3px 1px;
+
+}
+
+#tourneyLogoContainer {
+    display: block;
+    width: 300px;
+    height: 120px;
+    bottom: 220px;
+    justify-content: center;
+    left: 810px;
+}
+
+#tourneyLogo {
+    position: absolute;
+    display: block;
+    width: 300px;
+    height: 100px;
+    object-fit: scale-down;
 }
 
 #introVid {

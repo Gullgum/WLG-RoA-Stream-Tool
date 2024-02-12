@@ -13,8 +13,8 @@ const nameSizeDubs = "22px";
 const tagSizeDubs = "15px";
 const teamSize = "22px";
 let numSize = "36px"
-const roundSize = "19px";
-const tournamentSize = "16px";
+const roundSize = "28px";
+const tournamentSize = "30px";
 
 //to avoid the code constantly running the same method over and over
 const pCharPrev = [], scorePrev = [], colorPrev = [], wlPrev = [], topBarMoved = [];
