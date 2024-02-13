@@ -322,7 +322,7 @@ body {
 #tournament {
     position: absolute;
     width: auto;
-    padding: 4px 1% 55px 1%;
+    padding: 4px 3% 55px 3%;
     font-size: 60pt;
     /* top: 855px; */
     text-align: center;
@@ -331,11 +331,12 @@ body {
     white-space: nowrap;
     color: #ffffff;
     text-decoration: underline 3px;
-    text-underline-offset: 12px;
+    text-underline-offset: 10px;
     /* border-bottom: 5px solid white; */
+    clip-path: polygon(7% 0, 100% 0, 93% 100%, 0 100%);
     text-shadow: rgba(0,0,0,0.8) 2px 2px 1px;
     background-color: rgba(0,0,0,0.7);
-
+ 
 }
 
 #tourneyDivider {
