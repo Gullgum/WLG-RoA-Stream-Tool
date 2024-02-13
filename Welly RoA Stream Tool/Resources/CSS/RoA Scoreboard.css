@@ -363,7 +363,7 @@ body {
     height: 120px;
     bottom: 15px;
     object-fit: scale-down;
-    filter: drop-shadow(2px 2px 0 black);
+    /* filter: drop-shadow(2px 2px 0 black); */
 }
 
 #introVid {
