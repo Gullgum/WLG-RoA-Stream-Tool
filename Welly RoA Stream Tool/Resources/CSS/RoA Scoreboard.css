@@ -306,30 +306,44 @@ body {
     font-family: "Roboto";
     white-space: nowrap;
     font-size: 36pt;
-    text-shadow: black 3px 3px 1px;
+    text-shadow: rgba(0,0,0,0.8) 2px 2px 1px;
 }
 
 #tournamentName {
     position: absolute;
     width: 1920px;
+    top: 855px;
+    height: 100px;
     display: flex;
     justify-content: center;
+
 }
 
 #tournament {
     position: absolute;
     width: auto;
-    padding: 0px 2% 6px 2%;
+    padding: 4px 1% 55px 1%;
     font-size: 60pt;
-    top: 855px;
+    /* top: 855px; */
     text-align: center;
     vertical-align: middle;
     font-family: "Roboto";
     white-space: nowrap;
     color: #ffffff;
-    /* text-decoration: underline 2px; */
-    border-bottom: 5px solid white;
-    text-shadow: black 3px 3px 1px;
+    text-decoration: underline 3px;
+    text-underline-offset: 12px;
+    /* border-bottom: 5px solid white; */
+    text-shadow: rgba(0,0,0,0.8) 2px 2px 1px;
+    background-color: rgba(0,0,0,0.7);
+
+}
+
+#tourneyDivider {
+    background-color: white;
+    height: 4px;
+    bottom: 100px;
+    width: auto;
+    display: block;
 
 }
 
@@ -337,7 +351,7 @@ body {
     display: block;
     width: 300px;
     height: 120px;
-    bottom: 220px;
+    bottom: 210px;
     justify-content: center;
     left: 810px;
 }
@@ -346,8 +360,10 @@ body {
     position: absolute;
     display: block;
     width: 300px;
-    height: 100px;
+    height: 120px;
+    bottom: 15px;
     object-fit: scale-down;
+    filter: drop-shadow(2px 2px 0 black);
 }
 
 #introVid {
