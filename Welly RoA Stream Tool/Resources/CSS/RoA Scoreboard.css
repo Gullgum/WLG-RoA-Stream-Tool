@@ -285,22 +285,45 @@ body {
     transform: scaleX(-1);
 }
 
+#infoContainer {
+    position: absolute;
+    display: flex;
+    height: 170px;
+    width: 100%;
+    justify-content: center;
+    bottom: 40px;
+}
 
+#gameInfo {
+    display: inline-block;
+    position: absolute;
+    width: min-content;
+    height: min-content;
+    padding: 6px 2% 4px 2%;
+    clip-path: polygon(5% 0, 100% 0, 95% 100%, 0 100%);
+    background-color: rgba(0,0,0,0.7);
+
+}
 
 #overlayRound {
     opacity: 0;
-    width: 1920px;
-    display: flex;
-    justify-content: center;
-    top: 910px;
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    top: 4px;
+    /* justify-content: center; */
+
 }
 
 #round {
-    position: absolute;
-    width: 300px;
-    height: 70px;
+    position: relative;
+    display: inline-block;
+    margin: auto;
+    width: 100%;
+    height: auto;
     /* top: 8px; */
-    line-height: 32px;
+    line-height: 50px;
     text-align: center;
     vertical-align: middle;
     font-family: "Roboto";
@@ -310,19 +333,21 @@ body {
 }
 
 #tournamentName {
-    position: absolute;
-    width: 1920px;
-    top: 855px;
-    height: 100px;
-    display: flex;
+    position: relative;
+    /* float: left; */
+    width: 100%;
+    height: auto;
+    margin: auto;
+    display: block;
     justify-content: center;
 
 }
 
 #tournament {
-    position: absolute;
-    width: auto;
-    padding: 4px 3% 55px 3%;
+    position: relative;
+    display: block;
+    width: 100%;
+    margin: auto;
     font-size: 60pt;
     /* top: 855px; */
     text-align: center;
@@ -333,16 +358,18 @@ body {
     text-decoration: underline 3px;
     text-underline-offset: 10px;
     /* border-bottom: 5px solid white; */
-    clip-path: polygon(7% 0, 100% 0, 93% 100%, 0 100%);
+    
     text-shadow: rgba(0,0,0,0.8) 2px 2px 1px;
-    background-color: rgba(0,0,0,0.7);
- 
+
+
 }
+
+
 
 #tourneyDivider {
     background-color: white;
     height: 4px;
-    bottom: 100px;
+    /* bottom: 100px; */
     width: auto;
     display: block;
 
@@ -352,7 +379,7 @@ body {
     display: block;
     width: 300px;
     height: 120px;
-    bottom: 210px;
+    bottom: 205px;
     justify-content: center;
     left: 810px;
 }
@@ -361,10 +388,10 @@ body {
     position: absolute;
     display: block;
     width: 300px;
-    height: 120px;
+    height: 100px;
     bottom: 15px;
     object-fit: scale-down;
-    /* filter: drop-shadow(2px 2px 0 black); */
+    filter: drop-shadow(2px 2px 0 black);
 }
 
 #introVid {
